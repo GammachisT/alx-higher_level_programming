@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-import sys
+if __name__ == "__main__":
+    import sys
+    i = len(sys.argv) - 1
 
-if __name__ != "__main__":
-    exit()
-
-argStr = "{:d} argument"
+    if i == 0:
+        print("{} arguments.".format(i))
+    elif i == 1:
+        print("{} argument:".format(i))
