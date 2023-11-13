@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-from models.baser import Base
+from models.base import Base
 
 class Rectangle(Base):
 
-	def __init__(self, width, height, x=0, y=0, id=None)
+	def __init__(self, width, height, x=0, y=0, id=None):
 		super().__init__(id)
 		self.width = width
 		self.height = height
@@ -14,7 +14,7 @@ class Rectangle(Base):
 	@property
 	def width(self):
 		"""width of this retangle"""
-		retun self.__width
+		return self.__width
 
 	@width.setter
 	def width(self, value):
@@ -23,9 +23,9 @@ class Rectangle(Base):
 	@property
 	def height(self):
 		"""hieght of a rectangle."""
-		retun self.__height
+		return self.__height
 
-	@heigth.setter
+	@height.setter
 	def height(self, value):
 		self.__heigth = value
 
@@ -39,7 +39,7 @@ class Rectangle(Base):
 
 	@property
 	def y(self):
-	return self.__y
+		return self.__y
 
 	@y.setter
 	def y(self, value):
@@ -84,4 +84,3 @@ class Rectangle(Base):
 			self.__update(*args)
 		elif kwargs:
 			self.__update(**kwargs)
-		
