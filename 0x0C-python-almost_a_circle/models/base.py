@@ -71,7 +71,7 @@ class Base:
                                         for o in list_objs]
 		with open('{}.csv'.format(cls.__name__), "w", newline='', encoding="utf-8") as f:
                         writer = csv.writer(f)
-			writer.wrierows(list_objs)
+			writer.writerows(list_objs)
 
 	def load_from_file_csv(cls):
 		from models.rectangle import Rectangle
