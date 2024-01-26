@@ -3,7 +3,7 @@
     https://alx-intranet.hbtn.io/status
 """
 
-import urllib.request
+import urllib
 
 with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as response:
     body = response.read()
