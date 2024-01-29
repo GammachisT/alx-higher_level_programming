@@ -1,5 +1,5 @@
-
-n script that lists list 10 commits (from the most recent
+#!/usr/bin/python3
+"""Python script that lists list 10 commits (from the most recent
 to oldest) of the repository “rails” by the user “rails”."""
 
 import requests
