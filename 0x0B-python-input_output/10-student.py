@@ -24,7 +24,12 @@ class Student:
         self.age = age
 
     def to_json(self):
-        """
-            retrieves a dictionary representation of Student.
-        """
-        return self.__dict__
+        """Method that returns directory description with filter """
+        if isinstance(attrs, list):
+            if all(isinstance(attr, str) for attr in attrs):
+                res = {}
+                for i in attrs:
+                    if i in self.__dict__:
+                        res[i] = self.__dict__[i]
+                return res
+        return self.__dict__ 
