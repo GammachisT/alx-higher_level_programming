@@ -1,30 +1,20 @@
 #!/usr/bin/python3
-"""
-    Module for class Student.
-"""
+'''10-student.py
+'''
 
 
 class Student:
-    """
-        A class students that defines a student by:
-        Attributes:
-            first_name (str): name of student.
-            last_name (str): name of student.
-            age (int): age of student.
-        Methods:
-            __init__ - initializes the Student instance.
-            to_json - retrieves dictionary repr of Student instance.
-    """
+    ''' Student class '''
+
     def __init__(self, first_name, last_name, age):
-        """
-            Initialises Student instance.
-        """
+        ''' Constructor '''
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
-        """Method that returns directory description with filter """
+    def to_json(self, attrs=None):
+        ''' Method that returns directory description with filter '''
+
         if isinstance(attrs, list):
             if all(isinstance(attr, str) for attr in attrs):
                 res = {}
