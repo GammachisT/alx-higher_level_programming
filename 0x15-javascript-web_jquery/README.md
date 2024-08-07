@@ -23,8 +23,7 @@ Write a Javascript script that updates the text color of the HTML tag `HEADER` t
 
 Please test with this HTML file in your browser:
 
-**Solution:** [0-script.js](https://github.com/GammachisT/
-alx-higher_level_programming/blob/master/0x15-javascript-web_jquery/0-script.js)
+**Solution:** [0-script.js](https://github.com/GammachisT/alx-higher_level_programming/blob/master/0x15-javascript-web_jquery/0-script.js)
 
 ```
 $ guillaume@ubuntu:~/0x15$ cat 0-main.html 
